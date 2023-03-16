@@ -24,7 +24,14 @@
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="../static/css/responsive.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   </head>
+     <style>
+       @media (max-width: 767px) {
+        .hidden-mobile {
+          display: none;
+        }
+      }
+    </style>
+</head>
    <body>
       <!-- loading -->
       <div id="loading">
@@ -126,7 +133,7 @@
       <div class="main-content">
          <!--=================================
             Features -->
-         <section class="iq-features">
+         <section class="hidden-mobile iq-features">
             <div class="bg"><img src="../static/images/works/work-bg.png" alt="img"></div>
             <div class="container">
                <div class="row align-items-center">
@@ -134,9 +141,9 @@
                      <img class="img-fluid top-img1" src="../static/images/works/01.gif" alt="image">
                   </div>
                   <div class="col-lg-6 col-md-12">
-                     <div class="holderCircle">
+                     <div class=" hidden-mobile holderCircle">
                         <div class="round"></div>
-                        <div class="dotCircle">
+                        <div class="hidden-mobile dotCircle">
                            <span class="itemDot active itemDot1" data-tab="1">
                            <i class="fa-solid fa-file"></i>
                            <span class="forActive"></span>
@@ -159,7 +166,7 @@
                            </span>
 
                         </div>
-                        <div class="contentCircle">
+                        <div class="hidden-mobile contentCircle">
                            <div class="CirItem title-box active CirItem1">
                               <h2 class="title"><span>Documents</span></h2>
                               <p>Turn your documents, user manuals, guides into intelligent chatbots that can answer queries, provide product information, and offer support 24/7</p>
@@ -215,7 +222,7 @@
                         </div>
                      </form>
                   </div>
-                  <div class="col-lg-6 col-sm-12">
+                  <div class="hidden-mobile col-lg-6 col-sm-12">
                      <div class="works-box">
                         <img class="img-fluid top-bg" src="../static/images/works/work-bg.png" alt="image">
                         <img class="img-fluid works-img1" src="../static/images/works/works-img1.png" alt="image">
@@ -229,11 +236,20 @@
                         <h2 class="title-light text-dark">Turn your documents, audio, video files into   <span>Interactive Chatbots</span></h2>
                      </div>
 
-                              <button type="submit" class="button mb-2 grey">Upload file...</button>
+                              <form>
+                        <div class="form-row align-items-center justify-content-lg-start justify-content-center">
+                           <div class="col-auto">
+                              <input type="text" class="form-control mb-2 subscription-email"  placeholder="">
+                           </div>
+                           <div class="col-auto">
+                              <button type="submit" class="button mb-2 ">Upload...</button>
+                           </div>
+                        </div>
+                     </form>
 
 
                  </div>
-                  <div class="col-lg-6 col-sm-12 order-lg-1 order-2">
+                  <div class="hidden-mobile col-lg-6 col-sm-12 order-lg-1 order-2">
                      <div class="works-box">
                         <img class="img-fluid top-bg" src="../static/images/works/work-bg.png" alt="image">
                         <img class="img-fluid works-img1" src="../static/images/works/works-img1.png" alt="image">

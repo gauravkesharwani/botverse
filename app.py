@@ -33,6 +33,11 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/about-us")
+def about():
+    return render_template("about-us.html")
+
+
 @app.route("/get")
 def get_bot_response():
     login_time = datetime.strptime(session["login_time"], "%Y-%m-%d %H:%M:%S.%f")

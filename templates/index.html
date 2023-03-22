@@ -42,40 +42,7 @@
       <!-- loading End -->
       <!--=================================
          Header -->
-      <header id="header">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-9">
-                  <nav class="navbar navbar-expand-lg navbar-light">
-                     <a class="navbar-brand" href="/">
-                     <img class="logo" src="../static/images/botify_logo1.png" alt="image">
-                     <img class="logo-stiky" src="../static/images/botify_logo-sticky.png" alt="image">
-                     </a>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                           <li class="nav-item">
-                              <a class="nav-link active" href="/">Home</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="/about-us">About Us</a>
-                           </li>
-
-                        </ul>
-                     </div>
-                  </nav>
-               </div>
-               <div class="col-lg-3 text-right">
-                  <ul class="login">
-                     <li class="d-inline"><a href="login.html">Login</a></li>
-                     <li class="d-inline active"><a href="register.html">Register</a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </header>
+      {% include 'header.html' %}
       <!--=================================
          Header -->
       <!--=================================
@@ -204,6 +171,7 @@
                   </div>
                   <div class="hidden-mobile col-lg-6 col-sm-12">
                      <div class="works-box">
+
                         <img class="img-fluid top-bg" src="../static/images/works/work-bg.png" alt="image">
                         <img class="img-fluid works-img1" src="../static/images/works/works-img1.png" alt="image">
                         <img class="img-fluid top-img1 i-size" src="../static/images/works/01.gif" alt="image">
@@ -230,11 +198,10 @@
 
                  </div>
                   <div class="hidden-mobile col-lg-6 col-sm-12 order-lg-1 order-2">
-                     <div class="works-box">
-                        <img class="img-fluid top-bg" src="../static/images/works/work-bg.png" alt="image">
-                        <img class="img-fluid works-img1" src="../static/images/works/works-img1.png" alt="image">
-                        <img class="img-fluid top-img1 i-size" src="../static/images/works/01.gif" alt="image">
-                     </div>
+
+                        <img class="img-fluid top-bg" src="../static/images/works/screen-1.png" alt="image">
+
+
                   </div>
                </div>
 
@@ -276,72 +243,7 @@
          MAIN CONTENT -->
       <!--=================================
          Footer -->
-         <footer id="contact" class="education">
-            <div class="container">
-                <!-- Address END -->
-               
-                <!-- Address -->
-                <div class="footer-top">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6 ">
-                            <div class="footer-logo">
-                                <a href="#">
-                                    <img src="../static/images/botify_logo1.png" alt="vizion1">
-                                </a>
-                            </div>
-                            <div class="widget">
-                                <div class="textwidget">
-                                    <p class="mt-3">Make smart AI & ML based chatbots powered by GPT.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6 col-sm-6 ">
-                            <div class="widget">
-                                <h4 class="footer-title">Resources</h4>
-                                <div class="menu-footer1-container">
-                                    <ul id="menu-footer1" class="menu">
-                                        <li class="menu-item"><a href="/about-us">About Us</a></li>
-
-                                        <li class="menu-item"><a href="#">Blog</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 ">
-                            <h4 class="footer-title iq-rmt-30">Contact Info</h4>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <ul class="iq-contact text-white">
-
-                                        <li>
-                                            <a href="mailto:info@botify.com"><svg xmlns="http://www.w3.org/2000/svg" width="30px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                            </svg> info@botify.com</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30px" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                                              </svg>San Francisco, California, USA</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="pt-5">
-                <!-- Address END -->
-                <div class="pt-3 pb-3">
-                    <div class="row justify-content-between">
-                        <div class="col-auto mr-auto">
-                            <span class="copyright">Copyright 2023 botify All Rights Reserved.</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </footer>
+      {% include 'footer.html' %}
       <!--=================================
          Footer -->  
       <!--=================================

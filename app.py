@@ -38,6 +38,21 @@ def about():
     return render_template("about-us.html")
 
 
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
+
+@app.route("/privacy-policy")
+def privacy():
+    return render_template("privacy-policy.html")
+
+
+@app.route("/terms")
+def terms():
+    return render_template("terms.html")
+
+
 @app.route("/get")
 def get_bot_response():
     login_time = datetime.strptime(session["login_time"], "%Y-%m-%d %H:%M:%S.%f")

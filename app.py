@@ -1,4 +1,5 @@
 import logging
+import Chatter
 from flask import Flask, render_template, request, session
 from datetime import datetime, timedelta
 
@@ -53,10 +54,16 @@ def terms():
     return render_template("terms.html")
 
 
-@app.route("/get")
+@app.route("/chat")
 def get_bot_response():
-    login_time = datetime.strptime(session["login_time"], "%Y-%m-%d %H:%M:%S.%f")
-    elapsed_time = datetime.now() - login_time
+
+    userText = request.args.get('msg')
+    logger.debug("Conversation Customer:" + userText)
+
+    response = Chatter.get_response(userText)
+    logger.debug("Conversation Chatbot: " + response)
+
+    return response
 
 
 if __name__ == "__main__":

@@ -20,7 +20,7 @@ color: #cccccc; }
 #chat-input:-moz-placeholder { /* Firefox 18- */
 color: #cccccc; }
 .chat-submit { position: absolute; bottom: 6px; right: 10px; background: transparent; box-shadow: none; border: none; border-radius: 50%; color: #7d4ac7; width: 35px; height: 35px; font-size: 32px; cursor: pointer;}
-.chat-logs { padding: 15px; height: 370px; overflow-y: scroll; width: 100%;}
+.chat-logs { padding: 5px; height: 370px; overflow-y: scroll; width: 100%;}
 .chat-logs::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #F5F5F5; }
 .chat-logs::-webkit-scrollbar { width: 5px; background-color: #F5F5F5; }
 .chat-logs::-webkit-scrollbar-thumb { background-color: #5A5EB9; }
@@ -29,7 +29,7 @@ color: #cccccc; }
 }
 .chat-msg.user > .msg-avatar img { width: 45px; height: 45px; border-radius: 50%; float: left; width: 15%; }
 .chat-msg.self > .msg-avatar img { width: 45px; height: 45px; border-radius: 50%; float: right; width: 15%; }
-.cm-msg-text { background: white; padding: 4px 20px; color: #666666; max-width: 75%; float: left; margin-left: 10px; position: relative; margin-bottom: 20px; border-radius: 30px; }
+.cm-msg-text { background: white; padding: 1px 20px; color: #666666; max-width: 75%; float: left; margin-left: 10px; position: relative; margin-bottom: 20px; border-radius: 30px; }
 .chat-msg { clear: both; }
 .chat-msg.self > .cm-msg-text { float: right; margin-right: 10px; background: #5A5EB9; color: white; }
 .cm-msg-button>ul>li { list-style: none; float: left; width: 50%; }

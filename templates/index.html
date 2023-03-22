@@ -269,30 +269,7 @@
          Footer -->  
       <!--=================================
          Chatbot -->     
-      <div id="body">
-         <div id="chat-circle" class="btn btn-raised">
-              <img class="img-fluid top-bg" src="../static/images/chatbot-messenger.gif" alt="image">
-         </div>
-         <div class="chat-box">
-            <div class="chat-box-header">
-               <h5 class="title">ChatBot</h5>
-               <span class="chat-box-toggle"><i class="ion-close-round"></i></span>
-            </div>
-            <div class="chat-box-body">
-               <div class="chat-box-overlay">   
-               </div>
-               <div class="chat-logs">
-               </div>
-               <!--chat-log -->
-            </div>
-            <div class="chat-input">
-               <form>
-                  <input type="text" id="chat-input" placeholder="Send a message..."/>
-                  <button type="submit" class="chat-submit" id="chat-submit"><i class="ion-ios-paperplane"></i></button>
-               </form>
-            </div>
-         </div>
-      </div>
+      {% include 'chatbot.html' %}
       <!--=================================
          Chatbot --> 
       <!--=================================

@@ -21,25 +21,12 @@
       <link rel="stylesheet" href="../static/css/style.css">
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="../static/css/responsive.css">
-     <script>
-        function validateForm() {
-            var name = document.forms["registerForm"]["name"].value;
-            var email = document.forms["registerForm"]["email"].value;
-            var errorMessages = "";
+    <script>
+      var userId = document.getElementById("user.id").textContent;
+      alert(userId);
 
-            if (name == "") {
-                errorMessages += "Please enter a name.<br>";
-            }
-            // Use a regular expression to validate the email format
-            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                errorMessages += "Please enter a valid email address.<br>";
-            }
-
-            var errorDiv = document.getElementById("errors");
-            errorDiv.innerHTML = errorMessages;
-            return errorMessages == "";
-        }
+		// Convert the user ID to an integer and add 500 to it
+	  var updatedId = parseInt(userId) + 500;
     </script>
    </head>
    <body>
@@ -62,41 +49,33 @@
          Banner -->
       <!--=================================
          MAIN CONTENT -->
-      <div class="main-content">
-         <div class="main-content">
-            <!--================================
-               Register -->
-            <section class="iq-login-regi">
-               <div class="container">
-                  <div class="row align-items-center">
-                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h2>Apply for early access</h2>
-                        <p>We are still fine tuning the product and would love your help. Join our Beta to help create next generation chatbots.</p>
+
+
+
+
+       <div class="main-content">
+         <!--=================================
+            Contact -->
+         <section class="iq-contactbox">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="contact-box">
+                        <h3>Almost a beta user, {{ user.name }}!</h3>
+                        <p>You are on the waitlist. We will let you know when you can get started with Botify.</p>
                      </div>
-                     <div class="col-lg-6 col-md-6 col-sm-12 r-mt3">
-                         <form name="registerForm" method="post" action="/users" onsubmit="return validateForm()">
-                           <div class="form-group">
-                              <label class="mb-0" for="name">Name</label>
-                              <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                           </div>
-                           <div class="form-group">
-                              <label class="mb-0" for="email">Email</label>
-                              <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                           </div>
-                           <div id="errors"></div>
-                           <button type="submit" class="button mt-2 mb-2 w-100">Join Beta</button>
-                           <div class="form-check">
-                              <label class="form-check-label" for="exampleCheck1">By signing up, you agree to our <a href="/terms">Terms of Service</a>
-                              and <a href="/privacy-policy">Privacy Policy.</a></label>
-                           </div>
-                        </form>
+                  </div>
+                  <div class="col-lg-6 r-mt3">
+                     <div class="contact-bg">
+                        <h2>Your place #{{ user.id }}</h2>
+
                      </div>
                   </div>
                </div>
-            </section>
-            <!--================================
-               Register -->
-         </div>
+            </div>
+         </section>
+         <!--=================================
+            Contact -->
       </div>
       <!--=================================
          MAIN CONTENT -->

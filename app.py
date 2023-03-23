@@ -102,7 +102,7 @@ def users():
 def success(user_id):
     user = User.query.get(user_id)
     if user:
-        user.id = 500 + user.id
+        user.id = 51 + user.id
         return render_template('success.html', user=user)
     return render_template('404-error.html', message='User not found.')
 

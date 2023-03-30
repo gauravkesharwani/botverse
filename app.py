@@ -97,13 +97,10 @@ def overview():
     return render_template("projects-overview.html")
 
 
-@app.route("/chat2")
-def chat2():
-    return render_template("chat.html")
-
-
-@app.route("/projects-create")
+@app.route("/projects-create", methods=['GET', 'POST'])
 def create():
+    if request.method == 'POST':
+        return redirect('/projects-overview')
     return render_template("projects-create.html")
 
 

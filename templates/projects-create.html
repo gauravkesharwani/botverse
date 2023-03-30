@@ -69,7 +69,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title mb-4">Create New Project</h4>
-                                        <form>
+                                         <form method="post" action="/projects-create">
                                             <div class="row mb-4">
                                                 <label for="projectname" class="col-form-label col-lg-2">Project Name</label>
                                                 <div class="col-lg-10">
@@ -99,11 +99,11 @@
                                                     <input id="projectbudget" name="projectbudget" type="text" placeholder="Enter Project Budget..." class="form-control">
                                                 </div>
                                             </div>
-                                        </form>
+
                                         <div class="row mb-4">
                                             <label class="col-form-label col-lg-2">Attached Files</label>
                                             <div class="col-lg-10">
-                                                <form action="https://themesbrand.com/" method="post" class="dropzone">
+
                                                     <div class="fallback">
                                                         <input name="file" type="file" multiple />
                                                     </div>
@@ -115,7 +115,7 @@
                                                         
                                                         <h4>Drop files here or click to upload.</h4>
                                                     </div>
-                                                </form>
+
                                             </div>
                                         </div>
                                         <div class="row justify-content-end">
@@ -123,6 +123,7 @@
                                                 <button type="submit" class="btn btn-primary">Create Project</button>
                                             </div>
                                         </div>
+                                         </form>
 
                                     </div>
                                 </div>

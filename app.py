@@ -47,9 +47,29 @@ def home():
     return render_template("index.html")
 
 
+# @app.route("/?ref=<referrer>")
+# def refer():
+#     return render_template("index.html")
+
+
 @app.route("/about-us")
 def about():
     return render_template("about-us.html")
+
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        return redirect('/projects-grid')
+    return render_template("login.html")
+
+
+@app.route("/signup", methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        return redirect('/login')
+
+    return render_template("signup.html")
 
 
 @app.route("/register")
@@ -65,6 +85,26 @@ def privacy():
 @app.route("/terms")
 def terms():
     return render_template("terms.html")
+
+
+@app.route("/projects-grid")
+def grid():
+    return render_template("projects-grid.html")
+
+
+@app.route("/projects-overview")
+def overview():
+    return render_template("projects-overview.html")
+
+
+@app.route("/chat2")
+def chat2():
+    return render_template("chat.html")
+
+
+@app.route("/projects-create")
+def create():
+    return render_template("projects-create.html")
 
 
 @app.route("/chat")

@@ -57,6 +57,11 @@ def about():
     return render_template("about-us.html")
 
 
+@app.route("/modal")
+def modal():
+    return render_template("ui-modals.html")
+
+
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -90,6 +95,21 @@ def terms():
 @app.route("/projects-grid")
 def grid():
     return render_template("projects-grid.html")
+
+
+@app.route("/apps-marketing-seo")
+def apps_seo():
+    return render_template("apps-marketing-seo.html")
+
+
+@app.route("/apps-productivity")
+def apps_productivity():
+    return render_template("apps-productivity.html")
+
+
+@app.route("/apps-chatbot")
+def apps_chatbot():
+    return render_template("apps-chatbot.html")
 
 
 @app.route("/projects-overview")

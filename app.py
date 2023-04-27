@@ -112,6 +112,28 @@ def apps_chatbot():
     return render_template("apps-chatbot.html")
 
 
+@app.route("/apps-copywriting")
+def apps_copywriting():
+    return render_template("apps-copywriting.html")
+
+
+@app.route("/apps-hr-recruiting")
+def apps_hr_recruiting():
+    return render_template("apps-hr-recruiting.html")
+
+@app.route("/apps-product-dev")
+def apps_product_dev():
+    return render_template("apps-product-dev.html")
+
+@app.route("/apps-spreadsheets")
+def apps_spreadsheets():
+    return render_template("apps-spreadsheets.html")
+
+@app.route("/apps-learning")
+def apps_learning():
+    return render_template("apps-learning.html")
+
+
 @app.route("/projects-overview")
 def overview():
     return render_template("projects-overview.html")

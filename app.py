@@ -54,7 +54,7 @@ def home():
 
 @app.route("/about-us")
 def about():
-    return render_template("about-us.html")
+    return render_template("about.html")
 
 
 @app.route("/modal")
@@ -97,6 +97,11 @@ def grid():
     return render_template("projects-grid.html")
 
 
+@app.route("/apps")
+def apps():
+    return render_template("apps.html")
+
+
 @app.route("/apps-marketing-seo")
 def apps_seo():
     return render_template("apps-marketing-seo.html")
@@ -121,13 +126,16 @@ def apps_copywriting():
 def apps_hr_recruiting():
     return render_template("apps-hr-recruiting.html")
 
+
 @app.route("/apps-product-dev")
 def apps_product_dev():
     return render_template("apps-product-dev.html")
 
+
 @app.route("/apps-spreadsheets")
 def apps_spreadsheets():
     return render_template("apps-spreadsheets.html")
+
 
 @app.route("/apps-learning")
 def apps_learning():

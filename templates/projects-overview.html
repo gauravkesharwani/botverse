@@ -1,201 +1,222 @@
 <!doctype html>
 <html lang="en">
 
-    
+
 <!-- Mirrored from themesbrand.com/skote/layouts/projects-overview.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Mar 2023 19:16:26 GMT -->
+
 <head>
-        
-        <meta charset="utf-8" />
-        <title>Project Overview</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="../static/assets/images/favicon.ico">
+    <meta charset="utf-8" />
+    <title>Project Overview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-         <!-- Sweet Alert-->
-        <link href="../static/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../static/assets/images/favicon.ico">
+
+    <!-- Sweet Alert-->
+    <link href="../static/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
 
 
-        <link href="../static/assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <link href="../static/assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
-        <!-- Bootstrap Css -->
-        <link href="../static/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="../static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="../static/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="../static/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../static/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-    </head>
+</head>
 
-    <body data-sidebar="dark" data-layout-mode="light" onload="initChatbot()">
+<body data-sidebar="dark" data-layout-mode="light" onload="initChatbot()">
 
     <!-- <body data-layout="horizontal" data-topbar="dark"> -->
 
-        <!-- Begin page -->
-        <div id="layout-wrapper">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
 
-            
-             {% include 'page-topbar.html' %}
 
-            <!-- ========== Left Sidebar Start ========== -->
-              {% include 'left-sidebar.html' %}
-            <!-- Left Sidebar End -->
+        {% include 'page-topbar.html' %}
 
-            
-
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
-
-                <div class="page-content">
-                    <div class="container-fluid">
-
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0 font-size-18">Project Overview</h4>
+        <!-- ========== Left Sidebar Start ========== -->
+        {% include 'left-sidebar.html' %}
+        <!-- Left Sidebar End -->
 
 
 
-                                </div>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Project Overview</h4>
+
+
+
                             </div>
                         </div>
-                        <!-- end page title -->
+                    </div>
+                    <!-- end page title -->
 
 
-                        <!-- end row -->
+                    <!-- end row -->
 
-                        <div class="row">
+                    <div class="row">
 
-                            <!-- end col -->
+                        <!-- end col -->
 
-                            <div class="col-lg-6">
-                                <div class="row">
-                                     <div class="card">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="card">
                                     <div class="card-body">
                                         <div class="d-flex">
                                             <div class="flex-shrink-0 me-4">
-                                                <img src="../static/assets/images/companies/img-1.png" alt="" class="avatar-sm">
+                                                <img src="../static/assets/images/companies/img-1.png" alt=""
+                                                    class="avatar-sm">
                                             </div>
 
                                             <div class="flex-grow-1 overflow-hidden">
                                                 <h5 class="text-truncate font-size-15">Skote Dashboard UI</h5>
-                                                <p class="text-muted">Separate existence is a myth. For science, music, sport, etc.</p>
+                                                <p class="text-muted">Separate existence is a myth. For science, music,
+                                                    sport, etc.</p>
                                             </div>
                                         </div>
 
                                         <h5 class="font-size-15 mt-4">Project Details :</h5>
 
-                                        <p class="text-muted">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,</p>
+                                        <p class="text-muted">To an English person, it will seem like simplified
+                                            English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                                            The European languages are members of the same family. Their separate
+                                            existence is a myth. For science, music, sport, etc,</p>
 
 
 
 
                                     </div>
                                 </div>
-                                </div>
-                                <div class="row">
-                                    <div class="card">
+                            </div>
+                            <div class="row">
+                                <div class="card">
                                     <div class="card-body">
 
                                         <div>
-                                        <a href="javascript:linkdatasource();" class="btn btn-primary"><i class="bx bx-plus align-middle"></i> Add New Source</a>
-                                         </div>
+                                            <a href="javascript:linkdatasource();" class="btn btn-primary"><i
+                                                    class="bx bx-plus align-middle"></i> Add New Source</a>
+                                        </div>
                                         <div class="table-responsive">
                                             <table class="table table-nowrap align-middle table-hover mb-0">
                                                 <tbody>
                                                     <tr>
                                                         <td style="width: 45px;">
                                                             <div class="avatar-sm">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
+                                                                <span
+                                                                    class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
                                                                     <i class="bx bxs-file-doc"></i>
                                                                 </span>
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <h5 class="font-size-14 mb-1"><a href="javascript: void(0);" class="text-dark">http://www.botworksai.com</a></h5>
+                                                            <h5 class="font-size-14 mb-1"><a href="javascript: void(0);"
+                                                                    class="text-dark">http://www.botworksai.com</a></h5>
                                                             <small>Size : 3.25 MB</small>
                                                         </td>
-                                                         <td>
+                                                        <td>
                                                             <div class="text-center">
-                                                                <a href="javascript: test2();" class="text-dark"><i class="bx bx-repost h3 m-0"></i></a>
+                                                                <a href="javascript: test2();" class="text-dark"><i
+                                                                        class="bx bx-repost h3 m-0"></i></a>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="text-center">
-                                                                <a href="javascript: void(0);" class="text-dark"><i class="bx bx-trash h3 m-0"></i></a>
+                                                                <a href="javascript: void(0);" class="text-dark"><i
+                                                                        class="bx bx-trash h3 m-0"></i></a>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
                                                             <div class="avatar-sm">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
+                                                                <span
+                                                                    class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
                                                                     <i class="bx bxs-file-pdf"></i>
                                                                 </span>
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <h5 class="font-size-14 mb-1"><a href="javascript: void(0);" class="text-dark">botworks.pdf</a></h5>
+                                                            <h5 class="font-size-14 mb-1"><a href="javascript: void(0);"
+                                                                    class="text-dark">botworks.pdf</a></h5>
                                                             <small>Size : 3.15 MB</small>
                                                         </td>
-                                                         <td>
+                                                        <td>
                                                             <div class="text-center">
                                                                 <a href="javascript: void(0);" class="text-dark"></a>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="text-center">
-                                                                <a href="javascript: void(0);" class="text-dark"><i class="bx bx-trash h3 m-0"></i></a>
+                                                                <a href="javascript: void(0);" class="text-dark"><i
+                                                                        class="bx bx-trash h3 m-0"></i></a>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
                                                             <div class="avatar-sm">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
+                                                                <span
+                                                                    class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
                                                                     <i class="bx bxl-youtube"></i>
                                                                 </span>
                                                             </div>
                                                         </td>
 
                                                         <td>
-                                                            <h5 class="font-size-14 mb-1"><a href="javascript: void(0);" class="text-dark">https://www.youtube.com/watch?v=o9-ObGgfpEk</a></h5>
+                                                            <h5 class="font-size-14 mb-1"><a href="javascript: void(0);"
+                                                                    class="text-dark">https://www.youtube.com/watch?v=o9-ObGgfpEk</a>
+                                                            </h5>
                                                             <small>Size : 2.02 MB</small>
                                                         </td>
-                                                         <td>
+                                                        <td>
                                                             <div class="text-center">
                                                                 <a href="javascript: void(0);" class="text-dark"></a>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="text-center">
-                                                                <a href="javascript: void(0);" class="text-dark"><i class="bx bx-trash h3 m-0"></i></a>
+                                                                <a href="javascript: void(0);" class="text-dark"><i
+                                                                        class="bx bx-trash h3 m-0"></i></a>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
                                                             <div class="avatar-sm">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
+                                                                <span
+                                                                    class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-24">
                                                                     <i class="bx bx-video-recording"></i>
                                                                 </span>
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <h5 class="font-size-14"><a href="javascript: void(0);" class="text-dark">chatbot.mp4</a></h5>
+                                                            <h5 class="font-size-14"><a href="javascript: void(0);"
+                                                                    class="text-dark">chatbot.mp4</a></h5>
                                                             <small>Size : 2.25 MB</small>
                                                         </td>
-                                                         <td>
+                                                        <td>
                                                             <div class="text-center">
                                                                 <a href="javascript: void(0);" class="text-dark"></a>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="text-center">
-                                                                <a href="javascript: void(0);" class="text-dark"><i class="bx bx-trash h3 m-0"></i></a>
+                                                                <a href="javascript: void(0);" class="text-dark"><i
+                                                                        class="bx bx-trash h3 m-0"></i></a>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -204,12 +225,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
                             </div>
-                            <!-- end col -->
+                        </div>
+                        <!-- end col -->
 
-                            <div class="col-lg-6">
-                                  <div class="w-100 user-chat">
+                        <div class="col-lg-6">
+                            <div class="w-100 user-chat">
                                 <div class="card">
                                     <div class="p-4 border-bottom ">
                                         <div class="row">
@@ -219,16 +240,23 @@
                                                 <ul class="list-inline user-chat-nav text-end mb-0">
                                                     <li class="list-inline-item d-none d-sm-inline-block">
                                                         <div class="dropdown">
-                                                            <button class="btn nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
                                                                 <i class="bx bx-search-alt-2"></i>
                                                             </button>
-                                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-md">
+                                                            <div
+                                                                class="dropdown-menu dropdown-menu-end dropdown-menu-md">
                                                                 <form class="p-3">
                                                                     <div class="form-group m-0">
                                                                         <div class="input-group">
-                                                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Search ..."
+                                                                                aria-label="Recipient's username">
 
-                                                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                                                            <button class="btn btn-primary"
+                                                                                type="submit"><i
+                                                                                    class="mdi mdi-magnify"></i></button>
 
                                                                         </div>
                                                                     </div>
@@ -238,7 +266,9 @@
                                                     </li>
                                                     <li class="list-inline-item  d-none d-sm-inline-block">
                                                         <div class="dropdown">
-                                                            <button class="btn nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
                                                                 <i class="bx bx-cog"></i>
                                                             </button>
                                                             <div class="dropdown-menu dropdown-menu-end">
@@ -250,9 +280,11 @@
                                                         </div>
                                                     </li>
 
-                                                     <li class="list-inline-item  d-none d-sm-inline-block">
+                                                    <li class="list-inline-item  d-none d-sm-inline-block">
                                                         <div class="dropdown">
-                                                            <button class="btn nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="deploy()">
+                                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false" onclick="deploy()">
                                                                 <i class="bx bx-exit"></i>
                                                             </button>
 
@@ -265,62 +297,72 @@
                                     </div>
 
 
-                                  <div id="datasourceModal" class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div id="datasourceModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Select Datasource</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                     <div data-simplebar >
-                                                        <a href="javascript: test();" class="text-reset notification-item">
+                                                    <div data-simplebar>
+                                                        <a href="javascript: test();"
+                                                            class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqB6nTxAL4twQEAAHaQxntphQB7rR2qzehwP4AltChnQYb6yts2i-Wmpas4OF3OmsNr4&usqp=CAU"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Documents</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">TXT, PDF, DOC, PPT</p>
+                                                                        <p class="mb-1" key="t-simplified">TXT, PDF,
+                                                                            DOC, PPT</p>
 
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                        <a href="javascript: openWeblinkModal();" class="text-reset notification-item">
+                                                        <a href="javascript: openWeblinkModal();"
+                                                            class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://lh3.googleusercontent.com/vdKbcWCGwxtvvoZG5LK-rQcix_6mXl7Z2zzVil3ggiZ6hUETgtSVdbw0hrNAbRoCTCuSt_yn4EJrBS5XzILlYBxGIhMuikJ9nVt1HVA5nI76zA5ludsdTQF9t-ANf4lZPV7Wli9JzTrA8fj1wa5YAgcza7EK1Y8uqcj92Hjm1jaJJ10OJAkdaQg6oB7lKQ"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Webpage</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">Crawl data from web pages to add to your bot.</p>
+                                                                        <p class="mb-1" key="t-simplified">Crawl data
+                                                                            from web pages to add to your bot.</p>
 
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                         <a href="javascript: openWeblinkModal();" class="text-reset notification-item">
+                                                        <a href="javascript: openWeblinkModal();"
+                                                            class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Youtube</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                      <p class="mb-1" key="t-simplified">Source information from a YouTube video.</p>
+                                                                        <p class="mb-1" key="t-simplified">Source
+                                                                            information from a YouTube video.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
 
-                                                         <a href="javascript: test();" class="text-reset notification-item">
+                                                        <a href="javascript: test();"
+                                                            class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="data:image/png;base64,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"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Notion Database</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">Source information from your Notion workspace.</p>
+                                                                        <p class="mb-1" key="t-simplified">Source
+                                                                            information from your Notion workspace.</p>
 
                                                                     </div>
                                                                 </div>
@@ -331,39 +373,45 @@
                                             </div><!-- /.modal-content -->
                                         </div><!-- /.modal-dialog -->
                                     </div><!-- /.modal -->
-                                    <div id="fileUploadModal" class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div id="fileUploadModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Upload file</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
 
-                                                         <div class="card">
-                                                            <div class="card-body">
+                                                    <div class="card">
+                                                        <div class="card-body">
 
 
-                                                                <div>
-                                                                    <form action="#" class="dropzone">
-                                                                        <div class="fallback">
-                                                                            <input name="file" type="file" multiple="multiple">
+                                                            <div>
+                                                                <form action="#" class="dropzone">
+                                                                    <div class="fallback">
+                                                                        <input name="file" type="file"
+                                                                            multiple="multiple">
+                                                                    </div>
+                                                                    <div class="dz-message needsclick">
+                                                                        <div class="mb-3">
+                                                                            <i
+                                                                                class="display-4 text-muted bx bxs-cloud-upload"></i>
                                                                         </div>
-                                                                        <div class="dz-message needsclick">
-                                                                            <div class="mb-3">
-                                                                                <i class="display-4 text-muted bx bxs-cloud-upload"></i>
-                                                                            </div>
 
-                                                                            <h4>Drop files here or click to upload.</h4>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
+                                                                        <h4>Drop files here or click to upload.</h4>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
 
-                                                                <div class="text-center mt-4">
-                                                                    <button type="button" class="btn btn-primary waves-effect waves-light" onclick="test2()">Send Files</button>
-                                                                </div>
+                                                            <div class="text-center mt-4">
+                                                                <button type="button"
+                                                                    class="btn btn-primary waves-effect waves-light"
+                                                                    onclick="test2()">Send Files</button>
                                                             </div>
                                                         </div>
+                                                    </div>
 
 
 
@@ -371,56 +419,118 @@
                                             </div><!-- /.modal-content -->
                                         </div><!-- /.modal-dialog -->
                                     </div><!-- /.modal -->
-                                    <div id="fileTrainingModal" class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                                                                                        <div class="modal-content">
-                                                                                            <div class="modal-header">
-                                                                                                <h5 class="modal-title">Training</h5>
-                                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                            </div>
-                                                                                            <div class="modal-body">
-                                                                                               <div class="card">
-                                                                                                <div class="card-body">
+                                    <div id="fileTrainingModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Training</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="card">
+                                                        <div class="card-body">
 
-                                                                                                    <div class="">
-                                                                                                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*YXfjrXS8Ru3d35o2obk77A.gif" class="img-fluid" alt="Responsive image">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-
-
-
-                                                                                                   <div class="progress progress-xl">
-                                                                                                        <div id="pgbar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                                   </div>
+                                                            <div class="">
+                                                                <img src="https://miro.medium.com/v2/resize:fit:1400/1*YXfjrXS8Ru3d35o2obk77A.gif"
+                                                                    class="img-fluid" alt="Responsive image">
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
 
 
-                                                                                            </div>
-                                                                                        </div><!-- /.modal-content -->
-                                                                                    </div><!-- /.modal-dialog -->
-                                                                                </div><!-- /.modal -->
-                                    <div id="weblinkModal" class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="progress progress-xl">
+                                                        <div id="pgbar" class="progress-bar" role="progressbar"
+                                                            style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                    <div id="weblinkModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">URL</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
 
-                                                        <div class="card">
-                                                            <div class="card-body">
+                                                    <div class="card">
+                                                        <div class="card-body">
 
-                                                                <div class="hstack gap-3">
-                                                                    <input class="form-control me-auto" type="text" placeholder="www.example.com" aria-label="www.example.com">
-                                                                    <button type="button" class="btn btn-secondary" onclick="test2()">Submit</button>
-
-                                                                </div>
+                                                            <div class="hstack gap-3">
+                                                                <input class="form-control me-auto" type="text"
+                                                                    placeholder="www.example.com"
+                                                                    aria-label="www.example.com">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    onclick="test2()">Submit</button>
 
                                                             </div>
-                                                            <!-- end card body -->
+
                                                         </div>
+                                                        <!-- end card body -->
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                    <div id="embedModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">URL</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="card">
+                                                        <div class="card-body">
+
+                                                            <h4 class="card-title">Default Alerts</h4>
+                                                            <p class="card-title-desc">Alerts are available for any
+                                                                length of
+                                                                text, as well as an optional dismiss button. For proper
+                                                                styling, use one
+                                                                of the four <strong>required</strong> contextual classes
+                                                                (e.g., <code>.alert-success</code>). For inline
+                                                                dismissal, use the alerts jQuery plugin.</p>
+
+                                                            <div class="">
+                                                                <div class="alert alert-primary" role="alert">
+                                                                    A simple primary alert—check it out!
+                                                                </div>
+                                                                <div class="alert alert-secondary" role="alert">
+                                                                    A simple secondary alert—check it out!
+                                                                </div>
+                                                                <div class="alert alert-success" role="alert">
+                                                                    A simple success alert—check it out!
+                                                                </div>
+                                                                <div class="alert alert-danger" role="alert">
+                                                                    A simple danger alert—check it out!
+                                                                </div>
+                                                                <div class="alert alert-warning" role="alert">
+                                                                    A simple warning alert—check it out!
+                                                                </div>
+                                                                <div class="alert alert-info mb-0" role="alert">
+                                                                    A simple info alert—check it out!
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
 
 
@@ -429,23 +539,27 @@
                                         </div><!-- /.modal-dialog -->
                                     </div><!-- /.modal -->
 
-                                     <div id="deployModal" class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div id="deployModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Deploy</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                     <div data-simplebar >
-                                                        <a href="#" class="text-reset notification-item">
+                                                    <div data-simplebar>
+                                                        <a href="javascript:showEmbed();"
+                                                            class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://pluginicons.craft-cdn.com/chat-widget.svg?1621554798"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Widget</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">Embed a widget in your website</p>
+                                                                        <p class="mb-1" key="t-simplified">Embed a
+                                                                            widget in your website</p>
 
                                                                     </div>
                                                                 </div>
@@ -458,46 +572,50 @@
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Slack Bot</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">Interact with your chatbot in slack.</p>
+                                                                        <p class="mb-1" key="t-simplified">Interact with
+                                                                            your chatbot in slack.</p>
 
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                         <a href="#" class="text-reset notification-item">
+                                                        <a href="#" class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ=w240-h480-rw"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Discord</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                      <p class="mb-1" key="t-simplified">Interact with your chatbot in discord.</p>
+                                                                        <p class="mb-1" key="t-simplified">Interact with
+                                                                            your chatbot in discord.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
 
-                                                         <a href="#" class="text-reset notification-item">
+                                                        <a href="#" class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Telegram</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">Interact with your chatbot in telegram.</p>
+                                                                        <p class="mb-1" key="t-simplified">Interact with
+                                                                            your chatbot in telegram.</p>
 
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                         <a href="#" class="text-reset notification-item">
+                                                        <a href="#" class="text-reset notification-item">
                                                             <div class="d-flex">
                                                                 <img src="https://media.licdn.com/dms/image/D560BAQFs69kql1K6NQ/company-logo_200_200/0/1682094656186?e=1690416000&v=beta&t=4uJBYCw99WSmDuew1J4fNs1LBVAfKmpXlQUxt1T5X9A"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Telegram</h6>
                                                                     <div class="font-size-12 text-muted">
-                                                                        <p class="mb-1" key="t-simplified">Deploy to Botverse App Store.</p>
+                                                                        <p class="mb-1" key="t-simplified">Deploy to
+                                                                            Botverse App Store.</p>
 
                                                                     </div>
                                                                 </div>
@@ -512,7 +630,8 @@
 
                                     <div>
                                         <div class="chat-conversation p-3">
-                                            <ul class="list-unstyled mb-0" data-simplebar style="max-height: 486px;min-height: 486px;">
+                                            <ul class="list-unstyled mb-0" data-simplebar
+                                                style="max-height: 486px;min-height: 486px;">
                                                 <li>
                                                     <div class="chat-day-title">
                                                         <span class="title">Today</span>
@@ -522,9 +641,11 @@
                                                     <div class="conversation-list">
                                                         <div class="dropdown">
 
-                                                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <a class="dropdown-toggle" href="#" role="button"
+                                                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
                                                                 <i class="bx bx-dots-vertical-rounded"></i>
-                                                              </a>
+                                                            </a>
                                                             <div class="dropdown-menu">
                                                                 <a class="dropdown-item" href="#">Copy</a>
                                                                 <a class="dropdown-item" href="#">Save</a>
@@ -537,21 +658,46 @@
                                                             <p>
                                                                 Title: Botverse - Key Points
 
-- Botverse is a no-code platform that allows users to build intelligent chatbots powered by GPT in just a few clicks.
-- The platform is suitable for customer support, e-commerce, education, and human resources.
-- Chatbots can learn from interactions to improve over time.
-- Users can turn their documents, user manuals, and guides into intelligent chatbots that can answer queries.
-- To build a chatbot, users can upload their files or submit links to Botverse.
-- Companies can use Botverse to create AI-powered chatbots for customer support that can answer frequently asked questions, resolve simple issues, and escalate complex ones to human representatives.
-- E-commerce stores can use Botverse to create personalized shopping experiences for customers by helping them find products, make purchase recommendations, and handle order tracking and returns.
-- Educational institutions can create chatbots that assist students with assignments, answer academic questions, and provide access to learning resources.
-- HR departments can create chatbots that help employees with HR-related questions, such as benefits, vacation requests, and employee policies. Chatbots can also assist with recruitment and onboarding processes.
-- Botverse is based in San Francisco, California, USA.
+                                                                - Botverse is a no-code platform that allows users to
+                                                                build intelligent chatbots powered by GPT in just a few
+                                                                clicks.
+                                                                - The platform is suitable for customer support,
+                                                                e-commerce, education, and human resources.
+                                                                - Chatbots can learn from interactions to improve over
+                                                                time.
+                                                                - Users can turn their documents, user manuals, and
+                                                                guides into intelligent chatbots that can answer
+                                                                queries.
+                                                                - To build a chatbot, users can upload their files or
+                                                                submit links to Botverse.
+                                                                - Companies can use Botverse to create AI-powered
+                                                                chatbots for customer support that can answer frequently
+                                                                asked questions, resolve simple issues, and escalate
+                                                                complex ones to human representatives.
+                                                                - E-commerce stores can use Botverse to create
+                                                                personalized shopping experiences for customers by
+                                                                helping them find products, make purchase
+                                                                recommendations, and handle order tracking and returns.
+                                                                - Educational institutions can create chatbots that
+                                                                assist students with assignments, answer academic
+                                                                questions, and provide access to learning resources.
+                                                                - HR departments can create chatbots that help employees
+                                                                with HR-related questions, such as benefits, vacation
+                                                                requests, and employee policies. Chatbots can also
+                                                                assist with recruitment and onboarding processes.
+                                                                - Botverse is based in San Francisco, California, USA.
 
-Key Takeaway:
-Botverse is a user-friendly, no-code platform that allows users to build intelligent chatbots powered by GPT. The platform can be used for various purposes, including customer support, e-commerce, education, and human resources. Chatbots can learn from every interaction to provide better experiences over time
+                                                                Key Takeaway:
+                                                                Botverse is a user-friendly, no-code platform that
+                                                                allows users to build intelligent chatbots powered by
+                                                                GPT. The platform can be used for various purposes,
+                                                                including customer support, e-commerce, education, and
+                                                                human resources. Chatbots can learn from every
+                                                                interaction to provide better experiences over time
                                                             </p>
-                                                            <p class="chat-time mb-0"><i class="bx bx-time-five align-middle me-1"></i> 10:00</p>
+                                                            <p class="chat-time mb-0"><i
+                                                                    class="bx bx-time-five align-middle me-1"></i> 10:00
+                                                            </p>
                                                         </div>
 
                                                     </div>
@@ -565,162 +711,181 @@ Botverse is a user-friendly, no-code platform that allows users to build intelli
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="position-relative">
-                                                        <input type="text" class="form-control chat-input" placeholder="Enter Message...">
+                                                        <input type="text" class="form-control chat-input"
+                                                            placeholder="Enter Message...">
                                                         <div class="chat-input-links" id="tooltip-container">
                                                             <ul class="list-inline mb-0">
-                                                                <li class="list-inline-item"><a href="javascript: void(0);" title="Emoji"><i class="mdi mdi-emoticon-happy-outline"></i></a></li>
-                                                                <li class="list-inline-item"><a href="javascript: void(0);" title="Images"><i class="mdi mdi-file-image-outline"></i></a></li>
-                                                                <li class="list-inline-item"><a href="javascript: void(0);" title="Add Files"><i class="mdi mdi-file-document-outline"></i></a></li>
+                                                                <li class="list-inline-item"><a
+                                                                        href="javascript: void(0);" title="Emoji"><i
+                                                                            class="mdi mdi-emoticon-happy-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item"><a
+                                                                        href="javascript: void(0);" title="Images"><i
+                                                                            class="mdi mdi-file-image-outline"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item"><a
+                                                                        href="javascript: void(0);" title="Add Files"><i
+                                                                            class="mdi mdi-file-document-outline"></i></a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-auto">
-                                                    <button type="submit" class="btn btn-primary btn-rounded chat-send w-md waves-effect waves-light"><span class="d-none d-sm-inline-block me-2">Send</span> <i class="mdi mdi-send"></i></button>
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-rounded chat-send w-md waves-effect waves-light"><span
+                                                            class="d-none d-sm-inline-block me-2">Send</span> <i
+                                                            class="mdi mdi-send"></i></button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
-
-                    </div> <!-- container-fluid -->
-                </div>
-                <!-- End Page-content -->
-
-                
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <script>document.write(new Date().getFullYear())</script> © Skote.
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="text-sm-end d-none d-sm-block">
-                                    Design & Develop by botverse
-                                </div>
-                            </div>
-                        </div>
+                        <!-- end col -->
                     </div>
-                </footer>
+                    <!-- end row -->
+
+                </div> <!-- container-fluid -->
             </div>
-            <!-- end main content-->
+            <!-- End Page-content -->
 
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Skote.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by botverse
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- END layout-wrapper -->
+        <!-- end main content-->
 
-        <!-- Right Sidebar -->
-        <div class="right-bar">
-            <div data-simplebar class="h-100">
-                <div class="rightbar-title d-flex align-items-center px-3 py-4">
-            
-                    <h5 class="m-0 me-2">Settings</h5>
+    </div>
+    <!-- END layout-wrapper -->
 
-                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
-                        <i class="mdi mdi-close noti-icon"></i>
-                    </a>
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+
+                <h5 class="m-0 me-2">Settings</h5>
+
+                <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                    <i class="mdi mdi-close noti-icon"></i>
+                </a>
+            </div>
+
+            <!-- Settings -->
+            <hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Layouts</h6>
+
+            <div class="p-4">
+                <div class="mb-2">
+                    <img src="../static/assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
                 </div>
 
-                <!-- Settings -->
-                <hr class="mt-0" />
-                <h6 class="text-center mb-0">Choose Layouts</h6>
-
-                <div class="p-4">
-                    <div class="mb-2">
-                        <img src="../static/assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
-                        <label class="form-check-label" for="light-mode-switch">Light Mode</label>
-                    </div>
-    
-                    <div class="mb-2">
-                        <img src="../static/assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
-                        <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
-                    </div>
-    
-                    <div class="mb-2">
-                        <img src="../static/assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch">
-                        <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
-                    </div>
-
-                    <div class="mb-2">
-                        <img src="../static/assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images">
-                    </div>
-                    <div class="form-check form-switch mb-5">
-                        <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
-                        <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
-                    </div>
-
-            
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                    <label class="form-check-label" for="light-mode-switch">Light Mode</label>
                 </div>
 
-            </div> <!-- end slimscroll-menu-->
-        </div>
-        <!-- /Right-bar -->
+                <div class="mb-2">
+                    <img src="../static/assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
+                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                </div>
 
-        <!-- Right bar overlay-->
-        <div class="rightbar-overlay"></div>
+                <div class="mb-2">
+                    <img src="../static/assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch">
+                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                </div>
 
-        <!-- JAVASCRIPT -->
-        <script src="../static/assets/libs/jquery/jquery.min.js"></script>
-        <script src="../static/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../static/assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="../static/assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="../static/assets/libs/node-waves/waves.min.js"></script>
+                <div class="mb-2">
+                    <img src="../static/assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-5">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
+                    <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                </div>
 
-        <!-- apexcharts -->
-        <script src="../static/assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <script src="../static/assets/js/pages/project-overview.init.js"></script>
+            </div>
 
-        <script src="../static/assets/libs/dropzone/min/dropzone.min.js"></script>
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
 
-        <!-- App js -->
-        <script src="../static/assets/js/pages/modal.init.js"></script>
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
 
-          <!-- Sweet Alerts js -->
-        <script src="../static/assets/libs/sweetalert2/sweetalert2.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="../static/assets/libs/jquery/jquery.min.js"></script>
+    <script src="../static/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="../static/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../static/assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- Sweet alert init js-->
-        <script src="../static/assets/js/pages/sweet-alerts.init.js"></script>
+    <!-- apexcharts -->
+    <script src="../static/assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <script src="../static/assets/js/app.js"></script>
+    <script src="../static/assets/js/pages/project-overview.init.js"></script>
 
-        <script>
+    <script src="../static/assets/libs/dropzone/min/dropzone.min.js"></script>
+
+    <!-- App js -->
+    <script src="../static/assets/js/pages/modal.init.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="../static/assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Sweet alert init js-->
+    <script src="../static/assets/js/pages/sweet-alerts.init.js"></script>
+
+    <script src="../static/assets/js/app.js"></script>
+
+    <script>
+
+        function showEmbed() {
+            $('#deployModal').modal('hide');
+
+            $('#embedModal').modal('show');
+
+        }
 
         function linkdatasource() {
 
-          $('#datasourceModal').modal('show');
+            $('#datasourceModal').modal('show');
 
         }
 
-         function openWeblinkModal() {
+        function openWeblinkModal() {
 
-          $('#datasourceModal').modal('hide');
-          $('#weblinkModal').modal('show');
+            $('#datasourceModal').modal('hide');
+            $('#weblinkModal').modal('show');
         }
 
-          function deploy() {
+        function deploy() {
 
-          $('#deployModal').modal('show');
+            $('#deployModal').modal('show');
 
         }
 
 
-        function initChatbot()
-        {
+        function initChatbot() {
 
             $('#summary').hide();
 
@@ -729,10 +894,9 @@ Botverse is a user-friendly, no-code platform that allows users to build intelli
             const product = urlParams.get('state')
 
 
-            if(product == 1)
-            {
+            if (product == 1) {
 
-                      $('#summary').show();
+                $('#summary').show();
             }
         }
 
@@ -740,15 +904,15 @@ Botverse is a user-friendly, no-code platform that allows users to build intelli
 
         function test() {
 
-          $('#datasourceModal').modal('hide');
-          $('#fileUploadModal').modal('show');
+            $('#datasourceModal').modal('hide');
+            $('#fileUploadModal').modal('show');
         }
         function test2() {
 
-          $('#fileUploadModal').modal('hide');
-          $('#weblinkModal').modal('hide');
+            $('#fileUploadModal').modal('hide');
+            $('#weblinkModal').modal('hide');
 
-          $('#fileTrainingModal').modal('show');
+            $('#fileTrainingModal').modal('show');
 
 
 
@@ -756,7 +920,7 @@ Botverse is a user-friendly, no-code platform that allows users to build intelli
 
             width = 0;
 
-            var interval = setInterval(function() {
+            var interval = setInterval(function () {
 
                 width += 1;
 
@@ -766,9 +930,9 @@ Botverse is a user-friendly, no-code platform that allows users to build intelli
                     clearInterval(interval);
                     $('#fileTrainingModal').modal('hide');
                     Swal.fire(
-                      'Training Completed!',
-                      'Your bot is ready to use!',
-                      'success'
+                        'Training Completed!',
+                        'Your bot is ready to use!',
+                        'success'
                     );
                 }
             }, 100)
@@ -777,9 +941,10 @@ Botverse is a user-friendly, no-code platform that allows users to build intelli
 
         }
 
-        </script>
+    </script>
 
-    </body>
+</body>
 
 <!-- Mirrored from themesbrand.com/skote/layouts/projects-overview.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Mar 2023 19:16:26 GMT -->
+
 </html>

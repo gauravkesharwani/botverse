@@ -1,49 +1,59 @@
-  <header id="header">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-9">
-                  <nav class="navbar navbar-expand-lg navbar-light">
-                     <a class="navbar-brand" href="/">
-                     <img class="logo" src="../static/images/landing/logo-main.png" alt="image">
-                     <img class="logo-stiky" src="../static/images/landing/logo-black.png" alt="image">
-                     </a>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                           <li class="nav-item">
-                              {% if request.path == '/' %}
-                              <a class="nav-link active" href="/">Home</a>
-                              {% else %}
-                              <a class="nav-link" href="/">Home</a>
-                              {% endif %}
+    <header class="header1  has-sticky header_default">
 
-                           </li>
-                           <li class="nav-item">
-                             {% if request.path == '/about-us' %}
-                              <a class="nav-link active" href="/about-us">About Us</a>
-                              {% else %}
-                              <a class="nav-link" href="/about-us">About Us</a>
-                              {% endif %}
+      <div class="container main-header">
 
-                           </li>
+        <div class="row no-gutters">
+          <div class="col-sm-12">
+            <div class="logo_block">
+              <a class="navbar-brand" href="/">
+                <img class="img-fluid logo" src="../static/talkie/wp-content/uploads/2019/10/footerlogo-2.png" alt="logo"
+                  style="width:;height:">
+                <img class="img-fluid  logo-sticky" src="../static/talkie/wp-content/uploads/2019/11/logo-2.png" alt="talkie">
+              </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light menu">
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="ion-navicon"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div id="iq-menu-container" class="menu-main-menu-container">
+                  <ul id="top-menu" class="navbar-nav">
+                    <li id="menu-item-2548"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-2548">
+                      <a href="/">home</a>
+
+                    </li>
+
+                    <li id="menu-item-2274"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2274">
+                      <a href="/about-us">About Us</a>
+
+                    </li>
 
 
-                        </ul>
-                     </div>
-                  </nav>
-               </div>
-               <div class="col-lg-3 text-right">
-                  <ul class="login">
-                      {% if request.path == '/about-us' or request.path == '/' %}
-                              <li class="d-inline active"><a href="/register">Join Beta</a></li>
-                      {% else %}
-                      <li class="d-inline active"><a href="/">Close</a></li>
-                      {% endif %}
 
                   </ul>
-               </div>
-            </div>
-         </div>
-      </header>
+                </div>
+              </div>
+
+               <div class="sub-main">
+                <nav aria-label="breadcrumb">
+                  <div class="request-btn">
+                     {% if request.path == '/about-us' or request.path == '/' or request.path == '/apps' %}
+                        <a href="/register">Join Beta</a>
+                     {% else %}
+                      <a href="/">Close</a>
+
+                     {% endif %}
+                  </div>
+                </nav>
+              </div>
+
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>

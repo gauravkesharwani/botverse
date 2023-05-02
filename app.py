@@ -147,6 +147,21 @@ def overview():
     return render_template("projects-overview.html")
 
 
+@app.route("/blogs")
+def blogs():
+    return render_template("blogs.html")
+
+
+@app.route("/blog-1")
+def blog1():
+    return render_template("blog-1.html")
+
+
+@app.route("/blog-2")
+def blog2():
+    return render_template("blog-2.html")
+
+
 @app.route("/projects-create", methods=['GET', 'POST'])
 def create():
     if request.method == 'POST':

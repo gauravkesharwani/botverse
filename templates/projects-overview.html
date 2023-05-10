@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="../static/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="../static/talkie/wp-content/uploads/2021/04/favicon.png">
 
     <!-- Sweet Alert-->
     <link href="../static/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
@@ -491,7 +491,7 @@
                                         <div class="modal-dialog modal-dialog-centered modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title">URL</h5>
+                                                    <h5 class="modal-title">Embed your bot</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -500,35 +500,62 @@
                                                     <div class="card">
                                                         <div class="card-body">
 
-                                                            <h4 class="card-title">Default Alerts</h4>
-                                                            <p class="card-title-desc">Alerts are available for any
-                                                                length of
-                                                                text, as well as an optional dismiss button. For proper
-                                                                styling, use one
-                                                                of the four <strong>required</strong> contextual classes
-                                                                (e.g., <code>.alert-success</code>). For inline
-                                                                dismissal, use the alerts jQuery plugin.</p>
+                                                            <h4 class="card-title">Embed as an iFrame</h4>
+                                                            <p class="card-title-desc">To embed your bot as an iFrame into your site simply add the code below to your HTML.</p>
 
                                                             <div class="">
                                                                 <div class="alert alert-primary" role="alert">
-                                                                    A simple primary alert—check it out!
+                                                                    &lt;iframe src=&quot;https://botverse.click/bots/ec099c8e-37de-41d4-b3ea-8eca79f881e5/embed&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder="0"&gt;&lt;/iframe&gt;
                                                                 </div>
-                                                                <div class="alert alert-secondary" role="alert">
-                                                                    A simple secondary alert—check it out!
-                                                                </div>
-                                                                <div class="alert alert-success" role="alert">
-                                                                    A simple success alert—check it out!
-                                                                </div>
-                                                                <div class="alert alert-danger" role="alert">
-                                                                    A simple danger alert—check it out!
-                                                                </div>
-                                                                <div class="alert alert-warning" role="alert">
-                                                                    A simple warning alert—check it out!
-                                                                </div>
-                                                                <div class="alert alert-info mb-0" role="alert">
-                                                                    A simple info alert—check it out!
-                                                                </div>
+
                                                             </div>
+                                                            <h4 class="card-title">Embed as chat widget</h4>
+                                                            <p class="card-title-desc">To embed your bot as a chat widget add the following script within the body tag in your HTML.</p>
+
+                                                            <div class="">
+                                                                <div class="alert alert-primary" role="alert">
+                                                                    &lt;script src=&quot;https://botverse.click/chat-widget.js&quot; type="text/javascript&quot; id=&quot;ec099c8e-37de-41d4-b3ea-8eca79f881e5&quot; async defer> &lt;script &gt;
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div><!-- /.modal -->
+                                    <div id="apiModal" class="modal fade bs-example-modal-center" tabindex="-1"
+                                        role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Integrate with apps</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="card">
+                                                        <div class="card-body">
+
+                                                            <h4 class="card-title">Making requests</h4>
+                                                            <p class="card-title-desc">You can paste the command below into your terminal to run your first API request. Make sure to replace $BOTVERSE_API_KEY with your secret API key..</p>
+
+                                                            <div class="">
+                                                                <div class="alert alert-primary" role="alert">
+                                                                    curl https://api.botverse.com/v1/chat/ \ <br>
+                                                                      -H &quot;Content-Type: application/json&quot; \ <br>
+                                                                      -H &quot;Authorization: Bearer $BOTVERSE_API_KEY&quot; \ <br>
+                                                                      -d '{ <br>
+                                                                         &quot;messages&quot;: &quot;Hello&quot; <br>
+                                                                       }'
+                                                                </div>
+
+                                                            </div>
+
                                                         </div>
                                                     </div>
 
@@ -550,6 +577,20 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <div data-simplebar>
+                                                         <a href="javascript:showApi();"
+                                                            class="text-reset notification-item">
+                                                            <div class="d-flex">
+                                                                <img src="https://www.sendcloud.com/wp-content/uploads/2022/05/Web-Ready-Large-SendcloudAPI-icon.jpg"
+                                                                    class="me-3 rounded avatar-md" alt="user-pic">
+                                                                <div class="flex-grow-1">
+                                                                    <h6 class="mb-1">API</h6>
+                                                                    <div class="font-size-12 text-muted">
+                                                                        <p class="mb-1" key="t-simplified">Integrate with your app</p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
                                                         <a href="javascript:showEmbed();"
                                                             class="text-reset notification-item">
                                                             <div class="d-flex">
@@ -595,7 +636,7 @@
 
                                                         <a href="#" class="text-reset notification-item">
                                                             <div class="d-flex">
-                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png"
+                                                                <img src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/telegram-512.png"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
                                                                     <h6 class="mb-1">Telegram</h6>
@@ -612,7 +653,7 @@
                                                                 <img src="https://media.licdn.com/dms/image/D560BAQFs69kql1K6NQ/company-logo_200_200/0/1682094656186?e=1690416000&v=beta&t=4uJBYCw99WSmDuew1J4fNs1LBVAfKmpXlQUxt1T5X9A"
                                                                     class="me-3 rounded avatar-md" alt="user-pic">
                                                                 <div class="flex-grow-1">
-                                                                    <h6 class="mb-1">Telegram</h6>
+                                                                    <h6 class="mb-1">Botverse</h6>
                                                                     <div class="font-size-12 text-muted">
                                                                         <p class="mb-1" key="t-simplified">Deploy to
                                                                             Botverse App Store.</p>
@@ -863,6 +904,13 @@
             $('#deployModal').modal('hide');
 
             $('#embedModal').modal('show');
+
+        }
+
+        function showApi() {
+            $('#deployModal').modal('hide');
+
+            $('#apiModal').modal('show');
 
         }
 

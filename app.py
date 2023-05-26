@@ -1,11 +1,19 @@
 import logging
 import Chatter
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, request, session, redirect, url_for, Response
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, timedelta
+from flask_dropzone import Dropzone
+
+import knowledgebase
+from knowledgebase import KnowledgeBaseQA
+import re
+import os
+import shutil
 
 app = Flask(__name__)
 app.static_folder = 'static'
+app.secret_key = 'any random string'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///example.db'
 db = SQLAlchemy(app)
 # A very simple Flask Hello World app for you to get started with...
@@ -24,6 +32,34 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app.config.update(
+    UPLOADED_PATH=os.path.join(basedir, 'uploads'),
+    # Flask-Dropzone config:
+    DROPZONE_MAX_FILE_SIZE=3,
+    DROPZONE_MAX_FILES=30,
+)
+
+dropzone = Dropzone(app)
+
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    user = session['user']
+    project = session['project']
+    upload_dir = f"{app.config['UPLOADED_PATH']}\\{user}-{project}"
+
+    if not os.path.exists(upload_dir):
+        os.mkdir(upload_dir)
+    print(upload_dir)
+    if request.method == 'POST':
+        f = request.files.get('file')
+        file_path = os.path.join(upload_dir, f.filename)
+        if os.path.exists(upload_dir):
+            f.save(file_path)
+    return '', 204
 
 
 class User(db.Model):
@@ -144,6 +180,8 @@ def apps_learning():
 
 @app.route("/projects-overview")
 def overview():
+    session['user'] = 'gk'
+    session['project'] = 'prj1'
     return render_template("projects-overview.html")
 
 
@@ -171,13 +209,76 @@ def create():
 
 @app.route("/chat")
 def get_bot_response():
-    userText = request.args.get('msg')
+    userText = request.args.get('message')
     logger.debug("Conversation Customer:" + userText)
+    project = session['project']
+    user = session['user']
+    kb = KnowledgeBaseQA(f'{user}-{project}')
 
-    response = Chatter.get_response(userText)
-    logger.debug("Conversation Chatbot: " + response)
+    response = kb.query(userText)
+    print(response['result'])
 
-    return response
+    logger.debug("Conversation Chatbot: " + response['result'])
+
+    return response['result']
+
+
+def is_youtube_url(url):
+    pattern = r'(?:https?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?([a-zA-Z0-9_-]{11})'
+    match = re.match(pattern, url)
+    if match:
+        return True
+    return False
+
+
+def generate(url, project, user):
+    print(f"Calling generate for {url}")
+
+    if url == 'docs':
+        upload_dir = f"{app.config['UPLOADED_PATH']}\\{user}-{project}"
+        print(f"Loading Documents from {upload_dir}")
+        docs = knowledgebase.load_documents(upload_dir)
+        shutil.rmtree(upload_dir)
+
+    elif is_youtube_url(url):
+        docs = knowledgebase.load_youtube(url)
+    else:
+        docs = knowledgebase.load_website(url)
+
+    print(f"No of docs {len(docs)}")
+
+    total = len(docs)
+
+    x = 1
+
+    for doc in docs:
+        print(f"Starting to add docs")
+        comp = int((x / total) * 100)
+        print(comp)
+        yield "data:" + str(comp) + "\n\n"
+        x = x + 1
+        knowledgebase.add_document(doc, f'{user}-{project}')
+        print('adding doc to db')
+
+
+@app.route('/progress')
+def progress():
+    print("calling progress")
+    url = session['url']
+    project = session['project']
+    user = session['user']
+    print(f"Calling load function for  {url} for {project}")
+    return Response(generate(url, project, user), mimetype='text/event-stream')
+
+
+@app.route("/load_url")
+def load_url():
+    url = request.args.get('url')
+    print(f"Called load_url for {url}")
+
+    session['url'] = url
+    session['namespace'] = 'test'
+    return 'Success'
 
 
 @app.route('/users', methods=['GET', 'POST'])
@@ -210,4 +311,4 @@ def success(user_id):
 
 
 if __name__ == "__main__":
-    app.run(host="localhost", port=8000, debug=True)
+    app.run(debug=True)
